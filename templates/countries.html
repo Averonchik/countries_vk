@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    % if boo != 0:
+        <a href="?sort={{sort}}">Sort</a>
+        <a href="?all={{all}}">Show all cities</a>
+    % end
+    <ul>
+        % for item in items:
+            % if boo == 1:
+                <li><a href="/{{item['id']}}">{{item['title']}}</a></li>
+            % elif 0:
+                <li>{{item['title']}}</li>
+            %end
+        % end
+    </ul>
+</body>
+</html>
